@@ -1,0 +1,36 @@
+
+
+.genders-wrapper{
+    width: fit-content;
+    margin: 108px auto 132px;
+}
+
+.gender-item{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-image .5s ease-in-out;
+}
+
+.male{
+    background-image: url(../images/male.png);
+    display: block;
+    margin-bottom: 44px;
+}
+.female{
+    background-image: url(../images/female.png);
+    display: block;
+}
+
+.male.active{
+    background-image: url(../images/male-active.png);
+
+}
+.female.active{
+    background-image: url(../images/female-active.png);
+}
+
+.test{
+    text-transform: uppercase;
+}

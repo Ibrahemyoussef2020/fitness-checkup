@@ -1,0 +1,11 @@
+.home article{
+    min-width: 100vw;
+}
+
+p{
+    line-height: 2;
+}
+
+.go {
+    width: 185px !important;
+}

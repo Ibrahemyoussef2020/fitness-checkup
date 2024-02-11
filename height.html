@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="improve your site">
+        <!-------- fonts ---------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <!--------end fonts ---------->
+
+        <!-------- swiper ---------->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!--------end swiper ---------->
+
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/vertical-slide.css">
+
+
+        
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                
+        <script type="module" defer src="./scripts/redux.js"></script>
+        <script type="module" defer src="./scripts/script.js"></script>
+        <script type="module" defer src="./scripts/vetical-slide.js" ></script>
+        <script type="module" defer src="./scripts/height.js"></script>
+        
+        <title>select your height</title>
+    </head>
+</head>
+<body>
+    <div class="app-wrapper test-steps">
+        <section class="height">
+            <div class="intro">
+                <h1>What’s your height?</h1>
+                <p>
+                    You can always change this later  
+                </p>
+            </div>    
+            <div class="ages-wrapper vertical-wrapper">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swiper-height" id="swiper-height">
+                    <!--- put jsx here --->
+                </div>
+              </div>
+              <!-- Slider main container -->
+            </div>
+            <div class="visit-pages">
+                <a href="./dynasty.html" class="back">
+                    <img src="./images/back-arrow.png" alt="back">
+                </a>
+                <a href="./weight.html" class="go height-btn">
+                    Next 
+                    <img src="./images/go.png" alt=">">
+                </a>
+            </div>
+        </div>
+    </section>
+    </div>  
+</body>
+</html>

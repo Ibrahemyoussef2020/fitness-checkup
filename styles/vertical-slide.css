@@ -1,0 +1,69 @@
+.vertical-wrapper{
+    margin: 111px auto 115px;
+    max-width: 183px;
+    text-align: center;
+}
+
+.ages-wrapper{
+    max-width: 143px;
+}
+
+.swiper{
+    max-height:300px;
+    transform-style: preserve-3d;
+    perspective-origin: 1000px;
+}
+
+.swiper-slide{
+    height: 70px !important;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+.swiper-slide button{
+    color:var(--grayColor);
+    font-size: 34px;
+    font-weight: 400;
+    transition: all .1s ease-in-out;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    padding: 1.5rem 0 2.5rem 0;
+}
+
+
+.active button{
+    color: #fff;
+    font-size: 43px;
+    font-weight: 700;
+    transform: translatez(500px);
+    transform: scale3d(1,1.2,1);  
+}
+
+
+.active + .swiper-slide   button ,
+ .swiper-slide-active button {
+    color: #ffffffc7;
+}
+
+/* __________________ drow units ___________________ */
+
+.swiper-height .active button{
+    position: relative;
+}
+
+.swiper-height .active button::after{
+    content: 'sm';
+    position: absolute;
+    bottom: -18px;
+    right: 9px;
+    color: #ffffffc7;
+    font-size: 17px;
+    font-weight: 400;
+}

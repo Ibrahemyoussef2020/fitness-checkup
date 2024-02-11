@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="improve your site">
+        <!-------- fonts ---------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <!--------end fonts ---------->
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/gender.css">
+
+        <script type="module" defer src="./scripts/redux.js"></script>
+        <script type="module" defer src="./scripts/script.js"></script>
+        <script type="module" defer src="./scripts/gender.js"></script>
+        
+        <title>Choose your gender</title>
+    </head>
+</head>
+<body>
+<div class="app-wrapper test-steps">
+    <section class="gender">
+            <div class="intro">
+                <h1>Tell us about yourself!</h1>
+                <p>
+                    To give you a better experience we need to know your gender
+                </p>
+            </div>    
+            <div class="genders-wrapper">
+                <button class="male gender-item active" data-value="male"></button>
+                <button class="female gender-item" data-value="female"></button>
+            </div>
+
+            <div class="visit-pages">
+                <a href="./index.html" class="back">
+                    <img src="./images/back-arrow.png" alt="back">
+                </a>
+                <a href="./age.html" class="go gender-btn">
+                    Next 
+                    <img src="./images/go.png" alt=">">
+                </a>
+            </div>
+        </div>
+    </section>
+</div>   
+</body>
+</html>

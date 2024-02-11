@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="improve your site">
+        <!-------- fonts ---------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <!--------end fonts ---------->
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/dynasty.css">
+
+        <script type="module" defer src="./scripts/redux.js"></script>
+        <script type="module" defer src="./scripts/script.js"></script>
+        <script type="module" defer src="./scripts/dynasty.js"></script>
+        
+        <title>Choose your dynasty</title>
+    </head>
+</head>
+<body>
+<div class="app-wrapper test-steps">
+    <section class="dynasty">
+            <div class="intro">
+                <h1>Tell us about yourself!</h1>
+                <p>
+                    To give you a better experience we need to know your dynasty
+                </p>
+            </div>    
+            <div class="dynasties-wrapper">
+                <button class="female dynasty-item active" data-value="arabian">Arabian</button>
+                <button class="female dynasty-item" data-value="african">African</button>
+                <button class="female dynasty-item" data-value="asian">Asian</button>
+                <button class="male dynasty-item" data-value="white">White</button>
+            </div>
+
+            <div class="visit-pages">
+                <a href="./age.html" class="back">
+                    <img src="./images/back-arrow.png" alt="back">
+                </a>
+                <a href="./height.html" class="go dynasty-btn">
+                    Next 
+                    <img src="./images/go.png" alt=">">
+                </a>
+            </div>
+        </div>
+    </section>
+</div>   
+</body>
+</html>

@@ -1,0 +1,57 @@
+.vertical-wrapper{
+    margin: 111px auto 227px;
+    max-width: 183px;
+    text-align: center;
+}
+
+.ages-wrapper{
+    max-width: 300px;
+}
+
+.swiper{
+    max-height:300px;
+    transform-style: preserve-3d;
+    perspective-origin: 1000px;
+}
+
+.swiper-slide{
+    min-height: 166px;
+    width: 100% !important;
+    background: url(../images/spinner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.swiper-slide button{
+    color:#fff;
+    font-size: 43px;
+    font-weight: 700;
+    transition: all .1s ease-in-out;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 35px;
+}
+
+
+/* __________________ drow units ___________________ */
+
+.swiper-weight .swiper-slidebutton{
+    position: relative;
+}
+
+.swiper-weight .swiper-slide button::after{
+    content: 'sm';
+    position: absolute;
+    top:25px;
+    right: 99px;
+    color: #ffffffc7;
+    font-size: 17px;
+    font-weight: 400;
+}

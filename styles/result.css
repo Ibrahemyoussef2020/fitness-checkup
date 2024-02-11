@@ -1,0 +1,43 @@
+.passed{
+    color:#017ef1;
+}
+
+.failed{
+    color: #e5278d;
+}
+
+.intro  h1.result__heading{
+    margin-bottom: 2rem;
+}
+
+.result__desc{
+    max-height: 600px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.result ul{
+    list-style: none;
+    font-size: 1rem;
+    text-transform: lowercase;
+    margin-bottom: 2.5rem ;
+}
+
+
+.result li{
+    margin-bottom: .5rem;
+    line-height: 1.3;
+}
+
+li.heading{
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.passed .go{
+    background:#017ef1;
+}
+
+.failed .go{
+    background: #e5278d;
+}

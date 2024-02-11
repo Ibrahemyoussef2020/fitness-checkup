@@ -1,0 +1,50 @@
+
+.dynasties-wrapper{
+    width: fit-content;
+    margin: 108px auto 132px;
+}
+
+.dynasty-item{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color 1.5s ease-in-out;
+
+    background: var(--grayColor);
+    color: #fff;
+    font-size: 1.4rem;
+    position: relative;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+}
+
+.dynasty-item:first-child{
+    top: -60px;
+    left: 0;
+}
+
+.dynasty-item:nth-child(2){
+    top: 45px;
+    left: 25px
+}
+
+.dynasty-item:nth-child(3){
+    top: -25px;
+    left: 15px;
+}
+
+.dynasty-item:nth-child(4){
+    top: 75px;
+    left: 15px;
+}
+
+.dynasty-item.active{
+    background: var(--primaryColor);
+    color: #000;
+    transform: scale3d(1,1.1,1);
+}
+
+.test{
+    text-transform: uppercase;
+}
