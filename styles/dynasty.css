@@ -2,6 +2,7 @@
 .dynasties-wrapper{
     width: fit-content;
     margin: 108px auto 153px;
+    min-height: 320px;
 }
 
 .dynasty-item{
