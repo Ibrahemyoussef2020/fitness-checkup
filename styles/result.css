@@ -6,6 +6,10 @@
     color: #e5278d;
 }
 
+.result .intro{
+    max-width: unset;
+}
+
 .intro  h1.result__heading{
     margin-bottom: 2rem;
 }
