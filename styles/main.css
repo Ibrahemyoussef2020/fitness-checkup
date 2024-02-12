@@ -34,6 +34,7 @@ button{
     border: none;
     outline: none;
     background: transparent;
+    cursor: pointer;
 }
 
 a{
@@ -43,6 +44,10 @@ a{
 
 h1{
     font-weight: 900;
+}
+
+.swiper{
+    cursor: grab;
 }
 
 /* ----------------------- end  reset -----------------------  */

@@ -45,7 +45,7 @@ const slides = document.querySelectorAll('.swiper-slide');
   }
 
   swiperContainer.addEventListener('touchstart', _=> chooseValue())
-  swiperContainer.addEventListener('scroll', _=> chooseValue())
+  swiperContainer.addEventListener('mousemove', _=> chooseValue())
 
 
   const ageBtn = document.querySelector('.age-btn');

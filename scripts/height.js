@@ -27,6 +27,7 @@ const slides = document.querySelectorAll('.swiper-slide');
 
 
 function chooseValue(){
+  console.log('ggg');
   for (let index = 0; index < slides.length; index++) {
 
     let isOldActive = slides[index].classList.contains('swiper-slide-active'); 
@@ -43,7 +44,7 @@ function chooseValue(){
 }
 
   swiperContainer.addEventListener('touchstart', _=> chooseValue())
-  swiperContainer.addEventListener('scroll', _=> chooseValue())
+  swiperContainer.addEventListener('mousemove', _=> chooseValue())
 
 
   const heightBtn = document.querySelector('.height-btn');
