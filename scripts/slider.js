@@ -2,9 +2,6 @@ const paginaion = document.querySelector('.paginaion-bar');
 const paginaions = document.querySelectorAll('.pag');
 const slider = document.querySelector('.slider__thumb');
 
-console.log(paginaions.length);
-console.log(paginaions);
-
 paginaion.addEventListener('click' , e =>{
 
         paginaions.forEach(paginaion => paginaion.classList.contains('active') ? paginaion.classList.remove('active') : null)

@@ -24,28 +24,29 @@ if (document.getElementById('swiper-age') != null) {
 const swiperContainer = document.querySelector('.swiper');
 const slides = document.querySelectorAll('.swiper-slide');
 
-
-  swiperContainer.addEventListener('touchstart', e =>{
-   
+  function chooseValue(){
     for (let index = 0; index < slides.length; index++) {
 
-        let isNext = slides[index].classList.contains('swiper-slide-next'); 
-        
+      let isNext = slides[index].classList.contains('swiper-slide-next'); 
+      
 
-         if (isNext) {
+       if (isNext) {
 
-            slides.forEach(slide => slide.classList.contains('active') && slide.classList.remove('active') )
-            
-            let next = slides[index].nextElementSibling;
+          slides.forEach(slide => slide.classList.contains('active') && slide.classList.remove('active') )
+          
+          let next = slides[index].nextElementSibling;
 
-            let active = next.nextElementSibling; 
+          let active = next.nextElementSibling; 
 
-            active.classList.add('active');
+          active.classList.add('active');
 
-         }
+       }
     }
-   
-  })
+  }
+
+  swiperContainer.addEventListener('touchstart', _=> chooseValue())
+  swiperContainer.addEventListener('scroll', _=> chooseValue())
+
 
   const ageBtn = document.querySelector('.age-btn');
 

@@ -26,24 +26,25 @@ const swiperContainer = document.querySelector('.swiper');
 const slides = document.querySelectorAll('.swiper-slide');
 
 
-  swiperContainer.addEventListener('touchstart', e =>{
-   
+function chooseValue(){
+  for (let index = 0; index < slides.length; index++) {
 
-    for (let index = 0; index < slides.length; index++) {
+    let isOldActive = slides[index].classList.contains('swiper-slide-active'); 
 
-        let isOldActive = slides[index].classList.contains('swiper-slide-active'); 
+     if (isOldActive) {
 
-         if (isOldActive) {
+        slides.forEach(slide => slide.classList.contains('active') && slide.classList.remove('active') )
+        
+        let active = slides[index].nextElementSibling;
 
-            slides.forEach(slide => slide.classList.contains('active') && slide.classList.remove('active') )
-            
-            let active = slides[index].nextElementSibling;
+        active.classList.add('active');
+     }
+  }
+}
 
-            active.classList.add('active');
-         }
-    }
-   
-  });
+  swiperContainer.addEventListener('touchstart', _=> chooseValue())
+  swiperContainer.addEventListener('scroll', _=> chooseValue())
+
 
   const heightBtn = document.querySelector('.height-btn');
 
