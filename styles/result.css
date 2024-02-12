@@ -12,6 +12,7 @@
 
 .intro  h1.result__heading{
     margin-bottom: 2rem;
+    text-align: start;
 }
 
 .result__desc{
